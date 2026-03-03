@@ -736,7 +736,10 @@ export default function App() {
               <span className="text-2xl text-gray-500 line-through mr-4">R$ 97,00</span>
               R$ 37,00
             </div>
-            <button className="group relative inline-flex items-center justify-center gap-2 px-12 py-5 text-xl font-bold text-white transition-all duration-200 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:from-pink-500 hover:to-purple-500 hover:scale-105 shadow-[0_0_50px_-10px_rgba(236,72,153,0.6)]">
+            <button
+              onClick={() => window.open('https://pay.hotmart.com/J104718348Y', '_blank')}
+              className="group relative inline-flex items-center justify-center gap-2 px-12 py-5 text-xl font-bold text-white transition-all duration-200 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:from-pink-500 hover:to-purple-500 hover:scale-105 shadow-[0_0_50_px_-10px_rgba(236,72,153,0.6)] cursor-pointer"
+            >
               GARANTIR MEU ACESSO AGORA
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </button>
