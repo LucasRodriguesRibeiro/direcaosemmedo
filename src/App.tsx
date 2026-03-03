@@ -607,12 +607,12 @@ export default function App() {
                     <span className="text-gray-600 ml-1 block md:inline">Checklist: Segurança Antes de Sair</span>
                   </div>
                 </div>
-                <span className="text-red-500 font-bold text-lg md:text-xl line-through decoration-2 decoration-red-500/50">R$ 47,00</span>
+                <span className="text-red-500 font-bold text-lg md:text-xl line-through decoration-2 decoration-red-500/50">R$ 37,00</span>
               </div>
 
               <div className="text-center pt-8 pb-4 border-t border-gray-100 mt-4">
                 <p className="text-lg md:text-xl font-medium text-gray-800 mb-2">
-                  Tudo isso deveria custar <span className="text-red-600 font-bold">R$ 241,00</span>
+                  Tudo isso deveria custar <span className="text-red-600 font-bold">R$ 231,00</span>
                 </p>
                 <p className="text-lg md:text-xl font-bold text-gray-900 leading-tight">
                   Mas hoje você tem acesso ao ebook Dirigir Sem Medo <br className="hidden md:block" />
@@ -664,7 +664,7 @@ export default function App() {
                 </div>
 
                 <div className="space-y-2 mb-8">
-                  <p className="text-gray-500 text-lg">De <span className="line-through text-red-500">R$ 241,00</span> por:</p>
+                  <p className="text-gray-500 text-lg">De <span className="line-through text-red-500">R$ 231,00</span> por:</p>
                   <h3 className="text-5xl md:text-6xl font-black text-green-600 tracking-tight">
                     <span className="text-2xl font-bold text-gray-800 align-top mt-2 inline-block mr-1">5x de</span>
                     R$ 8,19
@@ -674,7 +674,7 @@ export default function App() {
 
                 <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 px-4 py-2 rounded-full font-bold text-sm mb-8 border border-green-100">
                   <div className="bg-green-500 rounded-full p-0.5"><Check size={10} className="text-white" strokeWidth={4} /></div>
-                  Você economiza R$ 204,00
+                  Você economiza R$ 194,00
                 </div>
 
                 <button
