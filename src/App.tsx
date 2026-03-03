@@ -734,7 +734,7 @@ export default function App() {
           <div className="flex flex-col items-center gap-6">
             <div className="text-5xl font-bold text-white">
               <span className="text-2xl text-gray-500 line-through mr-4">R$ 97,00</span>
-              R$ 47,00
+              R$ 37,00
             </div>
             <button className="group relative inline-flex items-center justify-center gap-2 px-12 py-5 text-xl font-bold text-white transition-all duration-200 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:from-pink-500 hover:to-purple-500 hover:scale-105 shadow-[0_0_50px_-10px_rgba(236,72,153,0.6)]">
               GARANTIR MEU ACESSO AGORA
