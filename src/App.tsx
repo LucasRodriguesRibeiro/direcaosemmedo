@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import React from "react";
 import { motion } from "motion/react";
 import { Check, X, BookOpen, Star, ShieldCheck, ArrowRight, Car, AlertTriangle, PlayCircle } from "lucide-react";
 
@@ -73,7 +74,7 @@ const SmartphoneMockup = () => (
         {/* Read Button Mockup */}
         <div className="mt-12 px-6 py-3 bg-white text-purple-900 rounded-full font-bold text-sm shadow-lg flex items-center gap-2">
           <BookOpen size={16} />
-          Ler Agora
+          Baixar Agora
         </div>
       </div>
     </div>
@@ -666,15 +667,14 @@ export default function App() {
                 <div className="space-y-2 mb-8">
                   <p className="text-gray-500 text-lg">De <span className="line-through text-red-500">R$ 231,00</span> por:</p>
                   <h3 className="text-5xl md:text-6xl font-black text-green-600 tracking-tight">
-                    <span className="text-2xl font-bold text-gray-800 align-top mt-2 inline-block mr-1">5x de</span>
-                    R$ 8,19
+                    R$ 10,00
                   </h3>
-                  <p className="text-gray-500">Ou R$ 37,00 à vista</p>
+                  <p className="text-gray-500">Pagamento Único</p>
                 </div>
 
                 <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 px-4 py-2 rounded-full font-bold text-sm mb-8 border border-green-100">
                   <div className="bg-green-500 rounded-full p-0.5"><Check size={10} className="text-white" strokeWidth={4} /></div>
-                  Você economiza R$ 194,00
+                  Você economiza R$ 221,00
                 </div>
 
                 <button
@@ -733,8 +733,8 @@ export default function App() {
           </h2>
           <div className="flex flex-col items-center gap-6">
             <div className="text-5xl font-bold text-white">
-              <span className="text-2xl text-gray-500 line-through mr-4">R$ 97,00</span>
-              R$ 37,00
+              <span className="text-2xl text-gray-500 line-through mr-4">R$ 231,00</span>
+              R$ 10,00
             </div>
             <button
               onClick={() => window.open('https://pay.hotmart.com/J104718348Y', '_blank')}
