@@ -71,11 +71,7 @@ const SmartphoneMockup = () => (
           O guia prático para recuperar sua <span className="italic">autonomia</span> e a liberdade de dirigir
         </p>
 
-        {/* Read Button Mockup */}
-        <div className="mt-12 px-6 py-3 bg-white text-purple-900 rounded-full font-bold text-sm shadow-lg flex items-center gap-2">
-          <BookOpen size={16} />
-          Baixar Agora
-        </div>
+
       </div>
     </div>
 
@@ -566,65 +562,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* Recap & Bonuses Section */}
-      <section className="py-16 px-4 bg-[#f5f5f5] text-gray-900">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-display font-bold text-center mb-8 text-black">
-            Recapitulando o que você irá receber...
-          </h2>
-
-          <div className="bg-white p-6 md:p-10 rounded-xl shadow-lg border border-gray-200">
-            <div className="space-y-4">
-              <div className="flex items-center justify-between gap-4 border-b border-gray-100 pb-4">
-                <div className="flex items-center gap-3">
-                  <div className="bg-green-500 rounded text-white p-0.5">
-                    <Check size={16} strokeWidth={4} />
-                  </div>
-                  <span className="font-bold text-lg md:text-xl">Ebook: Dirigir Sem Medo</span>
-                </div>
-                <span className="text-red-500 font-bold text-lg md:text-xl line-through decoration-2 decoration-red-500/50">R$ 97,00</span>
-              </div>
-
-              <div className="flex items-center justify-between gap-4 border-b border-gray-100 pb-4">
-                <div className="flex items-center gap-3">
-                  <div className="bg-green-500 rounded text-white p-0.5">
-                    <Check size={16} strokeWidth={4} />
-                  </div>
-                  <div>
-                    <span className="font-bold text-lg md:text-xl">Bônus 1:</span>
-                    <span className="text-gray-600 ml-1 block md:inline">Mecânica Básica para Mulheres</span>
-                  </div>
-                </div>
-                <span className="text-red-500 font-bold text-lg md:text-xl line-through decoration-2 decoration-red-500/50">R$ 97,00</span>
-              </div>
-
-              <div className="flex items-center justify-between gap-4 border-b border-gray-100 pb-4">
-                <div className="flex items-center gap-3">
-                  <div className="bg-green-500 rounded text-white p-0.5">
-                    <Check size={16} strokeWidth={4} />
-                  </div>
-                  <div>
-                    <span className="font-bold text-lg md:text-xl">Bônus 2:</span>
-                    <span className="text-gray-600 ml-1 block md:inline">Checklist: Segurança Antes de Sair</span>
-                  </div>
-                </div>
-                <span className="text-red-500 font-bold text-lg md:text-xl line-through decoration-2 decoration-red-500/50">R$ 37,00</span>
-              </div>
-
-              <div className="text-center pt-8 pb-4 border-t border-gray-100 mt-4">
-                <p className="text-lg md:text-xl font-medium text-gray-800 mb-2">
-                  Tudo isso deveria custar <span className="text-red-600 font-bold">R$ 231,00</span>
-                </p>
-                <p className="text-lg md:text-xl font-bold text-gray-900 leading-tight">
-                  Mas hoje você tem acesso ao ebook Dirigir Sem Medo <br className="hidden md:block" />
-                  junto com todos os bônus por apenas...
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Special Offer Section */}
       <section className="py-10 px-4 bg-[#f5f5f5]">
         <div className="max-w-5xl mx-auto">
@@ -699,6 +636,68 @@ export default function App() {
                 </div>
               </div>
 
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Recap & Bonuses Section */}
+      <section className="py-16 px-4 bg-[#f5f5f5] text-gray-900">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-display font-bold text-center mb-8 text-black">
+            Recapitulando o que você irá receber...
+          </h2>
+
+          <div className="bg-white p-6 md:p-10 rounded-xl shadow-lg border border-gray-200">
+            <div className="space-y-4">
+              <div className="flex items-center justify-between gap-4 border-b border-gray-100 pb-4">
+                <div className="flex items-center gap-3">
+                  <div className="bg-green-500 rounded text-white p-0.5">
+                    <Check size={16} strokeWidth={4} />
+                  </div>
+                  <span className="font-bold text-lg md:text-xl">Ebook: Dirigir Sem Medo</span>
+                </div>
+                <span className="text-red-500 font-bold text-lg md:text-xl line-through decoration-2 decoration-red-500/50">R$ 97,00</span>
+              </div>
+
+              <div className="flex items-center justify-between gap-4 border-b border-gray-100 pb-4">
+                <div className="flex items-center gap-3">
+                  <div className="bg-green-500 rounded text-white p-0.5">
+                    <Check size={16} strokeWidth={4} />
+                  </div>
+                  <div>
+                    <span className="font-bold text-lg md:text-xl">Bônus 1:</span>
+                    <span className="text-gray-600 ml-1 block md:inline">Mecânica Básica para Mulheres</span>
+                  </div>
+                </div>
+                <span className="text-red-500 font-bold text-lg md:text-xl line-through decoration-2 decoration-red-500/50">R$ 97,00</span>
+              </div>
+
+              <div className="flex items-center justify-between gap-4 border-b border-gray-100 pb-4">
+                <div className="flex items-center gap-3">
+                  <div className="bg-green-500 rounded text-white p-0.5">
+                    <Check size={16} strokeWidth={4} />
+                  </div>
+                  <div>
+                    <span className="font-bold text-lg md:text-xl">Bônus 2:</span>
+                    <span className="text-gray-600 ml-1 block md:inline">Checklist: Segurança Antes de Sair</span>
+                  </div>
+                </div>
+                <span className="text-red-500 font-bold text-lg md:text-xl line-through decoration-2 decoration-red-500/50">R$ 37,00</span>
+              </div>
+
+              <div className="text-center pt-8 pb-4 border-t border-gray-100 mt-4">
+                <p className="text-lg md:text-xl font-medium text-gray-800 mb-2">
+                  Tudo isso deveria custar <span className="text-red-600 font-bold">R$ 231,00</span>
+                </p>
+                <p className="text-lg md:text-xl font-bold text-gray-900 leading-tight">
+                  Mas hoje você tem acesso ao ebook Dirigir Sem Medo <br className="hidden md:block" />
+                  junto com todos os bônus por apenas...
+                </p>
+                <p className="text-5xl md:text-6xl font-black text-green-600 tracking-tight mt-4">
+                  R$ 10,00
+                </p>
+              </div>
             </div>
           </div>
         </div>
