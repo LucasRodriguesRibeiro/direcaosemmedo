@@ -642,14 +642,14 @@ export default function App() {
                 <div className="space-y-2 mb-8">
                   <p className="text-gray-500 text-lg">De <span className="line-through text-red-500">R$ 67,00</span> por:</p>
                   <h3 className="text-5xl md:text-6xl font-black text-green-600 tracking-tight">
-                    R$ 37,00
+                    R$ 17,00
                   </h3>
                   <p className="text-gray-500">Pagamento Único</p>
                 </div>
 
                 <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 px-4 py-2 rounded-full font-bold text-sm mb-8 border border-green-100">
                   <div className="bg-green-500 rounded-full p-0.5"><Check size={10} className="text-white" strokeWidth={4} /></div>
-                  Você economiza R$ 30,00
+                  Você economiza R$ 50,00
                 </div>
 
                 <button
@@ -733,7 +733,7 @@ export default function App() {
                   junto com todos os bônus por apenas...
                 </p>
                 <p className="text-5xl md:text-6xl font-black text-green-600 tracking-tight mt-4">
-                  R$ 37,00
+                  R$ 17,00
                 </p>
               </div>
             </div>
@@ -771,7 +771,7 @@ export default function App() {
           <div className="flex flex-col items-center gap-6">
             <div className="text-5xl font-bold text-white">
               <span className="text-2xl text-gray-500 line-through mr-4">R$ 67,00</span>
-              R$ 37,00
+              R$ 17,00
             </div>
             <button
               onClick={() => window.open('https://pay.hotmart.com/J104718348Y', '_blank')}
