@@ -653,7 +653,7 @@ export default function App() {
                 </div>
 
                 <button
-                  onClick={() => window.open('https://pay.hotmart.com/J104718348Y', '_blank')}
+                  onClick={() => window.open('https://pay.hotmart.com/J104718348Y?checkoutMode=10', '_blank')}
                   className="w-full bg-[#65a30d] hover:bg-[#4d7c0f] text-white font-bold py-4 rounded-xl text-xl shadow-lg transition-transform hover:scale-[1.02] active:scale-[0.98] mb-6 cursor-pointer"
                 >
                   Quero perder o medo de dirigir
@@ -774,7 +774,7 @@ export default function App() {
               R$ 17,00
             </div>
             <button
-              onClick={() => window.open('https://pay.hotmart.com/J104718348Y', '_blank')}
+              onClick={() => window.open('https://pay.hotmart.com/J104718348Y?checkoutMode=10', '_blank')}
               className="group relative inline-flex items-center justify-center gap-2 px-12 py-5 text-xl font-bold text-white transition-all duration-200 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:from-pink-500 hover:to-purple-500 hover:scale-105 shadow-[0_0_50_px_-10px_rgba(236,72,153,0.6)] cursor-pointer"
             >
               GARANTIR MEU ACESSO AGORA
