@@ -80,6 +80,52 @@ const SmartphoneMockup = () => (
   </div>
 );
 
+const SocialProofNotification = () => {
+  const names = [
+    "Sandra", "Cláudia", "Maria", "Juliana", "Beatriz", "Renata", "Fernanda",
+    "Patrícia", "Aline", "Bruna", "Débora", "Helena", "Isabela", "Camila",
+    "Nathália", "Priscila", "Raquel", "Sabrina", "Vanessa", "Paula",
+    "Letícia", "Larissa", "Gisele", "Andressa", "Tatiane", "Daniela", "Cristiane",
+    "Amanda", "Thais", "Gabriela", "Mariana", "Roberta", "Silvia", "Simone", "Tatiana"
+  ];
+
+  const [currentName, setCurrentName] = React.useState("");
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const showRandom = () => {
+      const idx = Math.floor(Math.random() * names.length);
+      setCurrentName(names[idx]);
+      setIsVisible(true);
+      setTimeout(() => setIsVisible(false), 5000); // Exibe por 5 segundos
+    };
+
+    const initialDelay = setTimeout(showRandom, 4000);
+    const interval = setInterval(showRandom, 15000);
+
+    return () => {
+      clearTimeout(initialDelay);
+      clearInterval(interval);
+    };
+  }, []);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : -100 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="fixed bottom-6 left-6 z-50 flex items-center gap-3 bg-[#10b981] text-white px-5 py-3.5 rounded-xl shadow-2xl border border-emerald-400/20 max-w-sm pointer-events-none"
+    >
+      <div className="flex items-center justify-center w-8 h-8 rounded-full border-2 border-white/30 bg-white/10 shrink-0">
+        <Check size={16} className="text-white" strokeWidth={3} />
+      </div>
+      <p className="text-sm font-medium">
+        <span className="font-bold">{currentName}</span> acabou de comprar
+      </p>
+    </motion.div>
+  );
+};
+
 export default function App() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white overflow-x-hidden selection:bg-pink-500/30">
@@ -88,15 +134,7 @@ export default function App() {
         Sua liberdade de dirigir começa agora
       </div>
 
-      {/* Navbar */}
-      <nav className="flex justify-center py-6">
-        <div className="flex items-center gap-2 font-display text-xl font-bold bg-white/5 px-6 py-2 rounded-full border border-white/10 backdrop-blur-md">
-          <Car className="text-pink-500" />
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
-            Direção Sem Medo
-          </span>
-        </div>
-      </nav>
+
 
       {/* Hero Section */}
       <main className="relative pt-8 pb-20 px-4 md:px-6 max-w-7xl mx-auto">
@@ -122,7 +160,7 @@ export default function App() {
               transition={{ delay: 0.1 }}
               className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.1] tracking-tight"
             >
-              Recupere sua <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">autonomia</span> e a liberdade de <span className="text-white underline decoration-pink-500 decoration-4 underline-offset-4">dirigir</span>
+              Perca o medo de dirigir e <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">pegue no volante</span> com <span className="text-white underline decoration-pink-500 decoration-4 underline-offset-4">naturalidade</span>
             </motion.h1>
 
             <motion.p
@@ -755,6 +793,7 @@ export default function App() {
         <p>© {new Date().getFullYear()} Direção Sem Medo. Todos os direitos reservados.</p>
         <p className="mt-2">Este produto não garante a obtenção de resultados. Qualquer referência ao desempenho de uma estratégia não deve ser interpretada como uma garantia de resultados.</p>
       </footer>
+      <SocialProofNotification />
     </div>
   );
 }
