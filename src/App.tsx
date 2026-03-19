@@ -160,7 +160,7 @@ export default function App() {
               transition={{ delay: 0.1 }}
               className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.1] tracking-tight"
             >
-              Perca o medo de dirigir e <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">pegue no volante</span> com <span className="text-white underline decoration-pink-500 decoration-4 underline-offset-4">naturalidade</span>
+              Como perder o medo de dirigir e <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">voltar ao volante</span> com segurança em até 15 dias
             </motion.h1>
 
             <motion.p
@@ -169,7 +169,7 @@ export default function App() {
               transition={{ delay: 0.2 }}
               className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto lg:mx-0"
             >
-              O guia prático para você vencer a insegurança, dominar o volante e conquistar sua independência no trânsito em menos de <span className="text-pink-400 font-bold">15 dias</span>.
+              O passo a passo prático que já ajudou mulheres comuns a saírem da dependência e começarem a dirigir sozinhas com confiança.
             </motion.p>
 
             <motion.div
@@ -178,8 +178,9 @@ export default function App() {
               transition={{ delay: 0.3 }}
               className="flex flex-wrap justify-center lg:justify-start gap-3"
             >
-              <Badge icon={BookOpen} color="gray">Leitura Rápida</Badge>
-              <Badge icon={ShieldCheck} color="green">Método Comprovado</Badge>
+              <Badge icon={Check} color="green">Simples de aplicar</Badge>
+              <Badge icon={ShieldCheck} color="purple">Sem pressão</Badge>
+              <Badge icon={Car} color="gray">Mesmo travada hoje</Badge>
             </motion.div>
           </div>
 
@@ -316,11 +317,11 @@ export default function App() {
           <div className="max-w-4xl mx-auto">
             <AlertTriangle className="w-16 h-16 text-yellow-400 mx-auto mb-6" />
             <h2 className="text-2xl md:text-4xl font-display font-bold mb-4 leading-tight">
-              Sua CNH está na gaveta? <br className="hidden md:block" />
-              O carro está parado na garagem?
+              Você tirou a CNH… <br className="hidden md:block" />
+              mas não dirige?
             </h2>
             <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
-              Isso acontece porque o medo te paralisa e cria desculpas na sua mente...
+              O carro está aí… Mas você sempre evita sair sozinha? Você até sabe dirigir, mas na hora de ir pra rua… O medo trava tudo.
             </p>
             <span className="bg-yellow-400 text-black font-bold px-6 py-2 text-lg md:text-xl rounded-sm inline-block transform -rotate-1">
               E quem não enfrenta, perde a liberdade!
@@ -344,15 +345,15 @@ export default function App() {
                 <h3 className="text-4xl md:text-5xl font-display font-bold mb-2 leading-tight">
                   Pare <span className="text-red-600 underline decoration-4 underline-offset-4">imediatamente!</span>
                 </h3>
-                <p className="text-gray-600 text-lg">Esse ciclo de medo está te custando caro.</p>
+                <p className="text-gray-600 text-lg">O problema não é falta de habilidade. Você não precisa de mais aula.</p>
               </div>
 
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { icon: "👻", title: "Pânico", desc: "Ao pegar no volante" },
-                  { icon: "😰", title: "Ansiedade", desc: "Dias antes de dirigir" },
-                  { icon: "🚧", title: "Limitação", desc: "Perde oportunidades" },
-                  { icon: "💸", title: "Prejuízo", desc: "Gastos com Uber/Táxi" }
+                  { icon: "🚗", title: "E se eu bater?", desc: "Se acontecer algo?" },
+                  { icon: "😰", title: "Não confio", desc: "Em mim dirigindo" },
+                  { icon: "🚧", title: "Eu travo", desc: "Só de pensar em sair" },
+                  { icon: "💡", title: "Todo mundo", desc: "Dirige... menos eu" }
                 ].map((item, i) => (
                   <div key={i} className="bg-white p-5 rounded-2xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
                     <div className="text-3xl mb-3">{item.icon}</div>
@@ -447,14 +448,14 @@ export default function App() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">O que você vai <span className="text-pink-500">aprender</span></h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">Não é apenas teoria. É um método passo a passo para reprogramar sua mente e dominar o veículo.</p>
+            <p className="text-gray-400 max-w-2xl mx-auto">Um guia prático com um passo a passo simples para destravar sua confiança no volante.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "Entendendo o Medo", desc: "Descubra a raiz da sua insegurança e como desligar o gatilho da ansiedade.", icon: "🧠" },
-              { title: "Domínio do Veículo", desc: "Técnicas simples para sentir o carro como uma extensão do seu corpo.", icon: "🚗" },
-              { title: "Trânsito Real", desc: "Como lidar com ladeiras, balizas e rodovias sem suar frio.", icon: "🚦" }
+              { title: "Controlar Ansiedade", desc: "Como controlar a ansiedade antes de dirigir e sair com calma.", icon: "🧠" },
+              { title: "Ganhar Confiança", desc: "Como ganhar confiança mesmo com medo e agir com segurança.", icon: "💪" },
+              { title: "Reagir no Trânsito", desc: "Como reagir no trânsito sem travar em situações reais.", icon: "🚗" }
             ].map((item, i) => (
               <div key={i} className="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-colors">
                 <div className="text-4xl mb-4">{item.icon}</div>
@@ -491,7 +492,7 @@ export default function App() {
                 viewport={{ once: true }}
                 className="text-4xl md:text-6xl font-display font-bold leading-tight"
               >
-                A <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">liberdade</span> de ir e vir
+                Imagina entrar no <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">carro</span> e sair domimando
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -500,7 +501,7 @@ export default function App() {
                 transition={{ delay: 0.1 }}
                 className="text-gray-400 text-xl leading-relaxed mt-6"
               >
-                Não é apenas sobre dirigir um carro, é sobre <span className="italic">retomar o controle</span> da sua vida. Imagine entrar no veículo, colocar sua música favorita e simplesmente sair.
+                Sem aquele medo travando você. Dirigir ouvindo música, ir onde quiser, sem depender de ninguém. Essa liberdade é possível.
               </motion.p>
             </div>
 
@@ -642,14 +643,14 @@ export default function App() {
                 <div className="space-y-2 mb-8">
                   <p className="text-gray-500 text-lg">De <span className="line-through text-red-500">R$ 67,00</span> por:</p>
                   <h3 className="text-5xl md:text-6xl font-black text-green-600 tracking-tight">
-                    R$ 17,00
+                    R$ 37,00
                   </h3>
                   <p className="text-gray-500">Pagamento Único</p>
                 </div>
 
                 <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 px-4 py-2 rounded-full font-bold text-sm mb-8 border border-green-100">
                   <div className="bg-green-500 rounded-full p-0.5"><Check size={10} className="text-white" strokeWidth={4} /></div>
-                  Você economiza R$ 50,00
+                  Você economiza R$ 30,00
                 </div>
 
                 <button
@@ -726,14 +727,14 @@ export default function App() {
 
               <div className="text-center pt-8 pb-4 border-t border-gray-100 mt-4">
                 <p className="text-lg md:text-xl font-medium text-gray-800 mb-2">
-                  Tudo isso deveria custar <span className="text-red-600 font-bold">R$ 67,00</span>
+                  Resolver isso com aulas extras custa <span className="text-red-600 font-bold">R$ 300 a R$ 500</span>
                 </p>
                 <p className="text-lg md:text-xl font-bold text-gray-900 leading-tight">
-                  Mas hoje você tem acesso ao ebook Dirigir Sem Medo <br className="hidden md:block" />
-                  junto com todos os bônus por apenas...
+                  Aqui você resolve por muito menos. <br className="hidden md:block" />
+                  Aproveite a oferta especial por apenas...
                 </p>
                 <p className="text-5xl md:text-6xl font-black text-green-600 tracking-tight mt-4">
-                  R$ 17,00
+                  R$ 37,00
                 </p>
               </div>
             </div>
@@ -771,7 +772,7 @@ export default function App() {
           <div className="flex flex-col items-center gap-6">
             <div className="text-5xl font-bold text-white">
               <span className="text-2xl text-gray-500 line-through mr-4">R$ 67,00</span>
-              R$ 17,00
+              R$ 37,00
             </div>
             <button
               onClick={() => window.open('https://pay.hotmart.com/J104718348Y?checkoutMode=10', '_blank')}
